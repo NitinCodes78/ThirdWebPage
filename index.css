@@ -1,5 +1,5 @@
 * {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Bai Jamjuree', sans-serif;
     font-weight: 400px;
     margin: 0px;
     padding: 0px;
@@ -8,17 +8,20 @@
 
 p {
     color: hsl(201, 11%, 66%);
+    font-weight: 400;
     font-size: 18px;
 }
 
 .container {
     display: grid;
-    grid-template-rows: 1.1fr 0.6fr 0.4fr 0.6fr 2.2fr 0.45fr 2.2fr 0.5fr 0.8fr 1.05fr 0.6fr 0.75fr 0.6fr;
+    grid-template-rows: 1.1fr 0.55fr 0.4fr 0.4fr 2.2fr 0.35fr 2.2fr 0.35fr 0.8fr 1.05fr 0.4fr 0.75fr 0.6fr;
 }
 
 .header{
     background-repeat: no-repeat;
     background: url('bg-header-desktop.png');
+    background-position: center;
+    background-size: cover;
     display: grid;
 }
 
@@ -39,16 +42,22 @@ p {
     justify-self: center;
 }
 
+#content-1 h1{
+    font-size: 3rem;
+}
+
 .content h1 {
     margin-bottom: 0rem;
     justify-self: center;
 }
 
 h1 {
+    color: hsl(210, 10%, 33%);
     font-weight: 600;
 }
 
 h2 {
+    color:hsl(210, 10%, 33%);
     font-weight: 600;
 }
 
@@ -58,7 +67,7 @@ h2 {
 }
 
 #content-2 h1{
-    margin-bottom:2rem;
+    margin-bottom:1rem;
 }
 .DownLoadButtons {
     display: flex;
@@ -122,10 +131,12 @@ h2 {
     margin-left: 8vw;
     margin-right: 8vw;
 }
-
+.featureImage{
+    margin-bottom: 0.8rem;
+}
 .featurePara {
     text-align: center;
-    margin-top: 0rem;
+    margin-top: 0.8rem;
 }
 
 .companies {
@@ -166,10 +177,14 @@ h2 {
     height: 4rem;
 }
 
-.icons {
+.icons{
     grid-area: 1/5/3/6;
     justify-self: center;
     align-self: center;
+}
+
+.icons img{
+    margin:0.6rem;
 }
 
 .LinksUp{
@@ -186,10 +201,10 @@ h2 {
 @media only screen and (max-width:1010px){
 
         .container{
-            grid-template-rows: 0.75fr 0.6fr 0.7fr 0.75fr 2.2fr 0.8fr 0.7fr 0.5fr 1.8fr 1.8fr 0.5fr 0.6fr 1.5fr  ;
+            grid-template-rows: 0.75fr 0.6fr 0.7fr 0.75fr 2.2fr 0.8fr 0.7fr 0.7fr 1.8fr 1.8fr 0.5fr 0.6fr 1.5fr  ;
         }
         #content-1 h1{
-            font-size:7rem;
+            font-size:8rem;
         }
         .content{
             padding-left:6vw;
@@ -245,7 +260,7 @@ h2 {
             padding-bottom:5rem;
         }
         .content h1{
-            margin-bottom:3rem;
+            margin-bottom:1.5rem;
         }
         .img{
             margin-bottom:5rem;
@@ -255,11 +270,14 @@ h2 {
             padding-bottom:5rem;
         }
         h2{
-            padding-bottom:3rem;
+            padding-bottom:0.5rem;
         }
         .featureImage{
             width:7rem;
-            margin-bottom:5rem;
+            margin-bottom:2rem;
+        }
+        .features h2{
+            padding-bottom: 0.2rem;
         }
         .features{
             grid-template-columns: none;

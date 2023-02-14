@@ -13,7 +13,7 @@ p {
 
 .container {
     display: grid;
-    grid-template-rows: 1.1fr 0.6fr 0.4fr 0.8fr 2.2fr 0.45fr 2.2fr 0.5fr 0.8fr 1.05fr 0.6fr 0.75fr 0.6fr;
+    grid-template-rows: 1.1fr 0.6fr 0.4fr 0.6fr 2.2fr 0.45fr 2.2fr 0.5fr 0.8fr 1.05fr 0.6fr 0.75fr 0.6fr;
 }
 
 .header{
@@ -52,6 +52,14 @@ h2 {
     font-weight: 600;
 }
 
+#content-2{
+    margin-top:4rem;
+    margin-bottom:7rem;
+}
+
+#content-2 h1{
+    margin-bottom:2rem;
+}
 .DownLoadButtons {
     display: flex;
     flex-direction: row;
@@ -138,11 +146,13 @@ h2 {
 .footer {
     background-color: hsl(210, 27%, 96%);
     display: grid;
+    justify-content: center;
     grid-template-columns: 1fr 0.65fr 0.65fr 0.65fr 2fr;
     grid-template-rows: 1fr 1fr;
 }
 
 .footer p {
+    text-align: center;
     color: hsl(210, 10%, 33%);
 }
 
@@ -222,6 +232,14 @@ h2 {
         .box-1 img{
             margin:auto;
         }
+        .division-2 h2{
+            padding-left:6vw;
+            padding-right: 6vw;
+        }
+        .division-2 p{
+            padding-left:6vw;
+            padding-right: 6vw;
+        }
         #content-3{
             padding-top:16rem;
             padding-bottom:5rem;
@@ -272,6 +290,9 @@ h2 {
         }
         .icons{
             grid-area:auto;
+        }
+        .links{
+            justify-self: center;
         }
         .LinksUp{
             align-self: flex-start;

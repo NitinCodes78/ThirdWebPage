@@ -235,6 +235,14 @@ h2 {
             background-size: cover;
             background-position: center;
         }
+        .logo{
+            align-self: center;
+            padding-top:0rem;
+            padding-bottom: 0rem;
+        }
+        .header .logo img{
+            height:16.5rem;
+        }
         .DownLoadButtons{
             display: flex;
             flex-direction: column;
